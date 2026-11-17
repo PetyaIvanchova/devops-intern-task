@@ -8,3 +8,5 @@ applications:
     random-route: false
     env:
       JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 21.+ } }'
+    routes:
+      - route: intern-challenge-app.cfapps.eu21.hana.ondemand.com
