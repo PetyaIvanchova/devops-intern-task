@@ -42,8 +42,6 @@ jobs:
           CF_API: ${{ secrets.CF_API }}
           CF_USER: ${{ secrets.CF_USER }}
           CF_PASSWORD: ${{ secrets.CF_PASSWORD }}
-          CF_ORG: ${{ secrets.CF_ORG }}
-          CF_SPACE: ${{ secrets.CF_SPACE }}
         run: |
             cf login \
               -a "$CF_API" \
