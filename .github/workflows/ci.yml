@@ -33,21 +33,21 @@ jobs:
 
       - name: Dependency Security Scan
         uses: dependency-check/Dependency-Check_Action@main
-          env:
-            JAVA_HOME: /opt/jdk
-          with:
-            project: 'intern-challenge-app'
-            path: '.'
-            format: 'HTML'
-            out: 'reports'
-            args: >
-              --failOnCVSS 7
+        env:
+          JAVA_HOME: /opt/jdk
+        with:
+          project: 'intern-challenge-app'
+          path: '.'
+          format: 'HTML'
+          out: 'reports'
+          args: >
+            --failOnCVSS 7
 
       - name: Publish Security Report
         uses: actions/upload-artifact@v4
         with:
-         name: dependency-check-report
-         path: reports/
+          name: dependency-check-report
+          path: reports/
 
       - name: Install CF CLI
         run: |
