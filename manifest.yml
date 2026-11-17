@@ -1,7 +1,7 @@
 ---
 applications:
   - name: intern-challenge-app
-    memory: 128M
+    memory: 700M
     buildpacks:
       - java_buildpack
     path: target/intern-challenge-app-0.0.1-SNAPSHOT.jar
