@@ -5,6 +5,6 @@ applications:
     buildpacks:
       - java_buildpack
     path: target/intern-challenge-app-0.0.1-SNAPSHOT.jar
-    random-route: true
+    random-route: false
     env:
       JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 21.+ } }'
